@@ -15,7 +15,7 @@ module.exports = {
       },
       fontFamily: {
         main: ["Tahoma", "serif"],
-        title: ["Didot", "serif"],
+        title: ["Georgia", "serif"],
         script: ["Great Vibes", "cursive"],
       },
       scale: {
