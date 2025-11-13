@@ -39,21 +39,26 @@
 
   <!-- MENU MÓVIL -->
   <div
-  class="md:hidden bg-mariachiWhite border-t border-mariachiGold overflow-hidden transition-all duration-300 origin-top"
-  [class.max-h-0]="!menuOpen"
-  [class.max-h-96]="menuOpen"
-  [class.opacity-0]="!menuOpen"
-  [class.opacity-100]="menuOpen"
->
-  <div class="px-2 pt-2 pb-3 space-y-1 transition-all duration-300 text-mariachiBrown font-main">
-    <a href="inicio" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Inicio</a>
-    <a href="conocenos" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Conócenos</a>
-    <a href="galeria" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Galería</a>
-    <a href="contacto" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Contacto</a>
-    <button (click)="contactWhatsApp()" class="w-full mt-2 bg-mariachiGold text-mariachiWhite px-4 py-2 rounded-full hover:bg-mariachiEnfasis transition">
-      Contrátanos
-    </button>
+    class="md:hidden bg-mariachiWhite border-t border-mariachiGold overflow-hidden transition-all duration-300 origin-top"
+    [class.max-h-0]="!menuOpen"
+    [class.max-h-96]="menuOpen"
+    [class.opacity-0]="!menuOpen"
+    [class.opacity-100]="menuOpen"
+  >
+    <div class="px-2 pt-2 pb-3 space-y-1 transition-all duration-300 text-mariachiBrown font-main">
+      <a href="inicio" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Inicio</a>
+      <a href="conocenos" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Conócenos</a>
+      <a href="galeria" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Galería</a>
+      <a href="contacto" class="block px-3 py-2 rounded-md hover:bg-mariachiLight transition">Contacto</a>
+      <button (click)="contactWhatsApp()" class="w-full mt-2 bg-mariachiGold text-mariachiWhite px-4 py-2 rounded-full hover:bg-mariachiEnfasis transition">
+        Contrátanos
+      </button>
+    </div>
   </div>
-</div>
 </nav>
+<a (click)="contactWhatsApp()"
+  class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+>
+  <img src="assets/icons/whatsapp-float.png" alt="Whatsapp" class="h-10">
+</a>
 

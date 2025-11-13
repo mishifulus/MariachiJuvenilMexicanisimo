@@ -1,1 +1,74 @@
-<p>footer works!</p>
+<footer class="bg-white py-10 font-main">
+  <div class="container mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-7 gap-8 items-start">
+
+    <!-- LOGO -->
+    <div class="flex justify-center md:justify-start">
+      <img
+        src="assets/images/logo.png"
+        alt="Mariachi Juvenil Logo"
+        class="w-48 md:w-56"
+      />
+    </div>
+
+    <div></div><div></div>
+
+    <!-- FORMAS DE PAGO -->
+    <div>
+      <h3 class="text-gray-900 mb-2"><i>Formas de Pago</i></h3>
+      <ul class="space-y-1 text-mariachiEnfasis">
+        <li>Efectivo</li>
+        <li>Tarjeta</li>
+        <li>Transferencia</li>
+      </ul>
+    </div>
+
+    <!-- SERVICIOS -->
+    <div>
+      <h3 class="text-gray-900 mb-2"><i>Servicios</i></h3>
+      <ul class="space-y-1 text-mariachiEnfasis">
+        <li>Bodas</li>
+        <li>Cumpleaños</li>
+        <li>Eventos</li>
+        <li>Misas</li>
+        <li>XV años</li>
+        <li>Serenatas</li>
+        <li>Graduaciones</li>
+      </ul>
+    </div>
+
+    <!-- SOBRE NOSOTROS -->
+    <div>
+      <h3 class="text-gray-900 mb-2"><i>Sobre Nosotros</i></h3>
+      <ul class="space-y-1 text-mariachiEnfasis">
+        <li><a href="conocenos">Conócenos</a></li>
+        <li><a href="galeria">Galería</a></li>
+        <li><a href="contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACTO -->
+    <div>
+      <h3 class="text-gray-900 mb-2 font-main text-center"><i>Contacto</i></h3>
+      <div class="grid grid-cols-2 gap-3 justify-items-center px-8">
+        <a href="{{ facebookLink }}" target="_blank">
+          <img src="assets/icons/facebook-icon.png" alt="Facebook" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="{{ instagramLink }}" target="_blank">
+          <img src="assets/icons/instagram-icon.png" alt="Instagram" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="{{ tiktokLink }}" target="_blank">
+          <img src="assets/icons/tik-tok-icon.png" alt="TikTok" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="{{ youtubeLink }}" target="_blank">
+          <img src="assets/icons/youtube-icon.png" alt="Youtube" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LÍNEA INFERIOR -->
+  <div class="mt-10 text-center text-gray-500">
+    <i>© 2025 Mariachi Juvenil Mexicanísimo de León, Guanajuato. Todos los derechos reservados.</i>
+  </div>
+</footer>
