@@ -11,6 +11,7 @@ module.exports = {
         mariachiDark: "#1c1c1c",
         mariachiEnfasis: "#BF7821",
         mariachiLight: "#ffda6bb4",
+        mariachiLight2: "#8c490f66",
         mariachiWhite: "#FFFFFF",
       },
       fontFamily: {
