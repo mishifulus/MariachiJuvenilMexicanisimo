@@ -1,0 +1,33 @@
+<!------------ DESKTOP VERSION ------------>
+<section
+  class="relative h-[90vh] flex items-center justify-center overflow-hidden hidden md:flex"
+>
+  <!-- Fondo dinámico -->
+  <div
+    *ngFor="let img of images; let i = index"
+    class="absolute inset-0 transition-opacity duration-1000"
+    [ngClass]="{
+      'opacity-100': i === currentIndex,
+      'opacity-0': i !== currentIndex
+    }"
+    [style.backgroundImage]="'url(' + img + ')'"
+    style="background-size: cover; background-position: top;"
+  ></div>
+</section>
+
+<!------------ MOBILE VERSION ------------>
+<section
+  class="relative h-[50vh] flex items-center justify-center text-center overflow-hidden md:hidden"
+>
+  <!-- Fondo dinámico -->
+  <div
+    *ngFor="let img of images; let i = index"
+    class="absolute inset-0 transition-opacity duration-1000"
+    [ngClass]="{
+      'opacity-100': i === currentIndex,
+      'opacity-0': i !== currentIndex
+    }"
+    [style.backgroundImage]="'url(' + img + ')'"
+    style="background-size: cover; background-position: center;"
+  ></div>
+</section>
