@@ -14,6 +14,9 @@ module.exports = {
         mariachiLight2: "#8c490f66",
         mariachiWhite: "#FFFFFF",
       },
+      backgroundImage: {
+        'mariachi-gradient': 'linear-gradient(135deg, #ffda6bb4, #8c490f66)',
+      },
       fontFamily: {
         main: ["Tahoma", "serif"],
         title: ["Georgia", "serif"],
